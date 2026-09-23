@@ -146,7 +146,7 @@ The first step is to clone the vg repository:
     git clone --recursive https://github.com/vgteam/vg.git
     cd vg
 
-#### Compiler
+#### Mac: Check Compiler
 
 Before doing these steps make sure to check your Clang version is greater than 21.0: 
 
@@ -156,7 +156,7 @@ Otherwise update Clang:
 
     sudo softwareupdate --install "Command Line Tools for Xcode 26.6-26.6"
 
-Otherwise update Clang, by updating the Xcode Command Line Tools. First, find the "Label" of the available Command Line Tools update:
+Another way to do this is by updating the Xcode Command Line Tools. First, find the "Label" of the available Command Line Tools update:
 
     softwareupdate --list
     
