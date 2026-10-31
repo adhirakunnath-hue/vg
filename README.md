@@ -190,9 +190,9 @@ To update them, first list the available software updates:
 softwareupdate --list
 ```
 
-Look for an entry whose label starts with `Command Line Tools for Xcode`. Then install it, replacing `<label>` with that exact label
+Look for an entry whose label starts with `Command Line Tools for Xcode`. If the `Command Line Tools for Xcode` isn't shown that means you have the updated compiler.
 
-```
+``` 
 Software Update found the following new or updated software:
 * Label: Command Line Tools for Xcode 26.5-26.5
 	Title: Command Line Tools for Xcode 26.5, Version: 26.5, Size: 920416KiB, Recommended: YES, 
@@ -221,10 +221,10 @@ You can also install the update by opening System Settings -> General in the lef
 
 If you have the full Xcode app installed and selected, update Xcode from the App Store instead.
 
-To confirm which compiler you have, run:
+To confirm that your complier is 21.0 or higher, run:
 
 ```    
-clang --version
+clang -v
 ```
 
 #### Mac: Run
